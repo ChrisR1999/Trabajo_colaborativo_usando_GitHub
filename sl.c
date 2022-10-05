@@ -75,8 +75,10 @@ void option(char *str)
             case 'F': FLY      = 1; break;
             case 'l': LOGO     = 1; break;
             case 'c': C51      = 1; break;
+
             case 'b': C53      = 2; break;
-            default:                break;
+            default: printf("Hello\n") break;
+
         }
     }
 }
