@@ -36,6 +36,8 @@
 /* sl version 1.00 : SL runs vomitting out smoke.                            */
 /*                                              by Toyoda Masashi 1992/12/11 */
 
+//This was edited by Christopher Madrigal 32936004
+
 #include <curses.h>
 #include <signal.h>
 #include <unistd.h>
@@ -54,7 +56,9 @@ int LOGO      = 0;
 int FLY       = 0;
 int C51       = 0;
 
-int my_mvaddstr(int y, int x, char *str)
+//Here the variable "y" and "x" are exchanged
+
+int my_mvaddstr(int x, int y, char *str)
 {
     for ( ; x < 0; ++x, ++str)
         if (*str == '\0')  return ERR;

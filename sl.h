@@ -7,6 +7,8 @@
  *========================================
  */
 
+//D5HIGHT has a wrong value, the correct value should be 15
+
 #define D51HIGHT	10
 #define D51FUNNEL	 7
 #define D51LENGTH	83
