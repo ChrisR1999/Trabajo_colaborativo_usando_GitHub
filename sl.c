@@ -56,7 +56,7 @@ int LOGO      = 0;
 int FLY       = 0;
 int C51       = 0;
 
-//Here the variable "y" and "x" are exchanged
+//Fixed issue with the function my_mvaddstr(int y, int x, char *str)
 
 int my_mvaddstr(int x, int y, char *str)
 {
