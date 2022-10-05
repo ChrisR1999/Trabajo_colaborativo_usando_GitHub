@@ -36,6 +36,8 @@
 /* sl version 1.00 : SL runs vomitting out smoke.                            */
 /*                                              by Toyoda Masashi 1992/12/11 */
 
+//esto no funciona 
+
 #include <curses.h>
 #include <signal.h>
 #include <unistd.h>
@@ -73,6 +75,7 @@ void option(char *str)
             case 'F': FLY      = 1; break;
             case 'l': LOGO     = 1; break;
             case 'c': C51      = 1; break;
+            case 'b': C53      = 1; break;
             default:                break;
         }
     }
@@ -107,7 +110,7 @@ int main(int argc, char *argv[])
         }
         getch();
         refresh();
-        usleep(40000);
+        sleep(4);
     }
     mvcur(0, COLS - 1, LINES - 1, 0);
     endwin();
@@ -144,6 +147,8 @@ int add_sl(int x)
         my_mvaddstr(y + i + py1, x + 21, coal[i]);
         my_mvaddstr(y + i + py2, x + 42, car[i]);
         my_mvaddstr(y + i + py3, x + 63, car[i]);
+        my_mvaddstr(y + i + py3, x + 63, car[i]);
+
     }
     if (ACCIDENT == 1) {
         add_man(y + 1, x + 14);
