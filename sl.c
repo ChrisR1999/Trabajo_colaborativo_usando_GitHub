@@ -36,6 +36,8 @@
 /* sl version 1.00 : SL runs vomitting out smoke.                            */
 /*                                              by Toyoda Masashi 1992/12/11 */
 
+//This was edited by Christopher Madrigal 32936004
+
 //esto no funciona 
 
 #include <curses.h>
@@ -55,6 +57,8 @@ int ACCIDENT  = 0;
 int LOGO      = 0;
 int FLY       = 0;
 int C51       = 0;
+
+//Fixed issue with the function my_mvaddstr(int y, int x, char *str)
 
 int my_mvaddstr(int y, int x, char *str)
 {
