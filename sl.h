@@ -10,7 +10,7 @@
 #define D51HIGHT	10
 #define D51FUNNEL	 7
 #define D51LENGTH	83
-#define D51PATTERNS	 6
+#define D51PATTERNS	 29 // Este lo hizo Bryan
 
 
 #define D51STR1  "      ====        ________                ___________ "
